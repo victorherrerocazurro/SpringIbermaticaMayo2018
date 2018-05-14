@@ -1,4 +1,4 @@
-package es.curso.spring.basico;
+package es.curso.spring.basico.persistence;
 
 public interface Persistencia {
 
