@@ -33,6 +33,9 @@ public class Aplicacion {
 		
 		String message = context.getMessage("saludo", new Object[]{}, Locale.ENGLISH);
 
+		//Invocamos una funcionalidad de forma generica,
+		//No se sabe si realmente hay funcionalidad detras
+		//y por supuesto que funcionalidad es.
 		context.publishEvent(new MiEvento(message));
 		
 	}
