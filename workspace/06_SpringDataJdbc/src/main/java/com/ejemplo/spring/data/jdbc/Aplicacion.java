@@ -14,11 +14,11 @@ public class Aplicacion {
 		// Obtenemos un Bean por Tipo
 		Servicio servicio = context.getBean(Servicio.class);
 
-		Factura factura1 = new Factura(11, "Compra abrigo");
+		/*Factura factura1 = new Factura(13, "Compra abrigo");
 		servicio.nuevo(factura1);
 
-		Factura factura2 = new Factura(12, "Compra libro");
-		servicio.nuevo(factura2);
+		Factura factura2 = new Factura(14, "Compra libro");
+		servicio.nuevo(factura2);*/
 
 		Iterable<Factura> facturas = servicio.buscar();
 

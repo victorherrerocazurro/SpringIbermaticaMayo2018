@@ -34,7 +34,7 @@ public class SpringConfiguration {
 		jpaProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
 		jpaProperties.setProperty("hibernate.show_sql", "true");
 		jpaProperties.setProperty("hibernate.format_sql", "true");
-		jpaProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+		jpaProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");//create, update, validate
 		jpaProperties.setProperty("hibernate.default_schema", "App");
 		
 		emfb.setJpaProperties(jpaProperties);
