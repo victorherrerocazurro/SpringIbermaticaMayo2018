@@ -1,0 +1,10 @@
+SET SCHEMA APP;
+DROP TABLE Factura;
+CREATE TABLE Factura
+(
+id INTEGER NOT NULL,
+concepto VARCHAR(100) NOT NULL,
+CONSTRAINT primary_key_1 PRIMARY KEY (id)
+);
+
+INSERT INTO Facturas (concepto) VALUES ('Libro')
