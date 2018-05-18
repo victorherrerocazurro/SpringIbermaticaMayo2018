@@ -12,7 +12,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import com.ejemplo.spring.data.rest.entities.Factura;
 
 //@RestResource(path="/fact")
-public interface FacturaDao extends JpaRepository<Factura, Long>{
+public interface FacturaRepository extends JpaRepository<Factura, Long>{
 
 	@RestResource(exported=false)
 	List<Factura> findByConcepto(String concepto);
